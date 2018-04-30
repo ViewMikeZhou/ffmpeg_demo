@@ -7,4 +7,5 @@ package com.zhou.ffmpegdemo;
 public class EncodUtil {
     public native  void init();
 
+
 }
