@@ -5,7 +5,7 @@ package com.zhou.ffmpegdemo;
  */
 
 public class EncodUtil {
-    public native  void init();
-
-
+    public native  String init();
+    public native String avcodecInfo();
+    public native  String configInfo();
 }

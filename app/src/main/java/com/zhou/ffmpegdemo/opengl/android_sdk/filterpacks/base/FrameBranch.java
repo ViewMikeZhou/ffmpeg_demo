@@ -17,11 +17,12 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.base;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.GenerateFinalPort;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFinalPort;
 
 /**
  * @hide
@@ -41,6 +42,7 @@ public class FrameBranch extends Filter {
         for (int i = 0; i < mNumberOfOutputs; ++i) {
             addOutputBasedOnInput("out" + i, "in");
         }
+
     }
 
     @Override

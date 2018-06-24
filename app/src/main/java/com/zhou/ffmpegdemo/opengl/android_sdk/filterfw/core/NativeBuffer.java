@@ -17,10 +17,10 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Frame;
+
 
 /**
- * @hide
+ *
  */
 public class NativeBuffer {
 

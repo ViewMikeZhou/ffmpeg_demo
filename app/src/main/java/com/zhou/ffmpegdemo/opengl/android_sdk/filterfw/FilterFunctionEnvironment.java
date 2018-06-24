@@ -17,11 +17,10 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterFactory;
-import android.filterfw.core.FilterFunction;
-import android.filterfw.core.FrameManager;
-
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterFactory;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterFunction;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameManager;
 /**
  * A FilterFunctionEnvironment provides a simple functional front-end to manually executing
  * filters. Use this environment if a graph-based approach is not convenient for your case.

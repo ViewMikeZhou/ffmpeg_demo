@@ -17,8 +17,6 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.RoundRobinScheduler;
 import android.util.Log;
 
 import java.util.HashMap;
@@ -28,7 +26,7 @@ import java.util.HashMap;
  * filters will be scheduled, and possibly repeatedly, until there is no filter
  * that can be scheduled.
  *
- * @hide
+ *
  */
 public class OneShotScheduler extends RoundRobinScheduler {
     private HashMap <String, Integer> scheduled;

@@ -17,15 +17,15 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.base;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.core.GenerateFinalPort;
+
 import android.os.Handler;
 import android.os.Looper;
 
-import java.lang.Runnable;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFinalPort;
 
 /**
  * @hide

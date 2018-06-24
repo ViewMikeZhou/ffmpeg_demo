@@ -17,15 +17,12 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.geometry;
 
-import android.filterfw.geometry.Point;
-
-import java.lang.Float;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * @hide
+ *
  */
 public class Quad {
 

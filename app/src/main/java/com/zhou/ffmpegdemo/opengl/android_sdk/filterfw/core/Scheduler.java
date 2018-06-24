@@ -17,11 +17,8 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterGraph;
-
 /**
- * @hide
+ *
  */
 public abstract class Scheduler {
     // All methods are core internal methods as Scheduler internals are only used by the GraphRunner.

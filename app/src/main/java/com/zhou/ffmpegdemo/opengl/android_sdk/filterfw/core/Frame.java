@@ -17,14 +17,12 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.FrameManager;
 import android.graphics.Bitmap;
 
 import java.nio.ByteBuffer;
 
 /**
- * @hide
+ *
  */
 public abstract class Frame {
 

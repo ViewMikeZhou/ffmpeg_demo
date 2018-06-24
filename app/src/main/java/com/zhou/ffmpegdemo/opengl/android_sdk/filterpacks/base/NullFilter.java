@@ -17,8 +17,9 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.base;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
 
 /**
  * @hide

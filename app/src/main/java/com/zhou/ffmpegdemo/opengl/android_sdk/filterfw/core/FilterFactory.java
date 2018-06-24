@@ -17,18 +17,15 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Filter;
 import android.util.Log;
+
+import java.lang.reflect.Constructor;
+import java.util.HashSet;
 
 import dalvik.system.PathClassLoader;
 
-import java.lang.reflect.Constructor;
-import java.lang.ClassLoader;
-import java.lang.Thread;
-import java.util.HashSet;
-
 /**
- * @hide
+ *
  */
 public class FilterFactory {
 

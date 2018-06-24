@@ -17,10 +17,11 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw;
 
-import android.filterfw.core.CachedFrameManager;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.FrameManager;
-import android.filterfw.core.GLEnvironment;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.CachedFrameManager;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameManager;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GLEnvironment;
 
 /**
  * Base class for mobile filter framework (MFF) frontend environments. These convenience classes

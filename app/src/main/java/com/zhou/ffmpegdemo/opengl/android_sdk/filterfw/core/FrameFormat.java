@@ -17,14 +17,11 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.KeyValueMap;
-import android.filterfw.core.MutableFrameFormat;
-
 import java.util.Arrays;
 import java.util.Map.Entry;
 
 /**
- * @hide
+ *
  */
 public class FrameFormat {
 

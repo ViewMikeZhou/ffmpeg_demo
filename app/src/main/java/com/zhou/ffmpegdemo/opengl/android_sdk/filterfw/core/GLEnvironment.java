@@ -17,7 +17,7 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.NativeAllocatorTag;
+
 import android.graphics.SurfaceTexture;
 import android.os.Looper;
 import android.util.Log;

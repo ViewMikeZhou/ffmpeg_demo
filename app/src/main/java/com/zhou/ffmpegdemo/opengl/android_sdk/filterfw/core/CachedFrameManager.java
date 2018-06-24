@@ -17,10 +17,6 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.SimpleFrameManager;
-
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;

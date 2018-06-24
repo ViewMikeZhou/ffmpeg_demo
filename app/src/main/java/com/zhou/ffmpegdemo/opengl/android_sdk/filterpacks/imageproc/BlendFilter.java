@@ -16,9 +16,10 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.imageproc;
 
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Program;
-import android.filterfw.core.ShaderProgram;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Program;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.ShaderProgram;
 
 /**
  * The filter linearly blends "left" and "right" frames. The blending weight is

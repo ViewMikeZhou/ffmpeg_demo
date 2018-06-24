@@ -17,17 +17,16 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.numeric;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.format.ObjectFormat;
 
-import java.lang.Math;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.ObjectFormat;
 
 /**
- * @hide
+ *
  */
 public class SinWaveFilter extends Filter {
 

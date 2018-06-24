@@ -16,18 +16,20 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.imageproc;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.core.Program;
-import android.filterfw.core.ShaderProgram;
-import android.filterfw.format.ImageFormat;
+
 import android.graphics.Bitmap;
 
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Program;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.ShaderProgram;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.ImageFormat;
+
 /**
- * @hide
+ *
  */
 public class BitmapOverlayFilter extends Filter {
 

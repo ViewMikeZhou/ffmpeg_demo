@@ -17,11 +17,10 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.FrameManager;
-import android.filterfw.format.ObjectFormat;
+
 import android.graphics.Bitmap;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.ObjectFormat;
 
 import java.nio.ByteBuffer;
 

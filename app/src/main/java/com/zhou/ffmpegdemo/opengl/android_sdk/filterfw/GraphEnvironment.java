@@ -18,16 +18,17 @@
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw;
 
 import android.content.Context;
-import android.filterfw.core.AsyncRunner;
-import android.filterfw.core.FilterGraph;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.FrameManager;
-import android.filterfw.core.GraphRunner;
-import android.filterfw.core.RoundRobinScheduler;
-import android.filterfw.core.SyncRunner;
-import android.filterfw.io.GraphIOException;
-import android.filterfw.io.GraphReader;
-import android.filterfw.io.TextGraphReader;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.AsyncRunner;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterGraph;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameManager;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GraphRunner;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.RoundRobinScheduler;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.SyncRunner;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.io.GraphIOException;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.io.GraphReader;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.io.TextGraphReader;
 
 import java.util.ArrayList;
 
@@ -41,7 +42,7 @@ import java.util.ArrayList;
  *   5. Execute the obtained runner.
  * Note that it is possible to add multiple graphs and runners to a single GraphEnvironment.
  *
- * @hide
+ *
  */
 public class GraphEnvironment extends MffEnvironment {
 

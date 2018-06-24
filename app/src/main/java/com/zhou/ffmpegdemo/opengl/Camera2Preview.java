@@ -27,6 +27,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import com.zhou.ffmpegdemo.R;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GLEnvironment;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -40,7 +41,7 @@ import javax.microedition.khronos.opengles.GL10;
  * Created by zhou on 2018/5/5.
  */
 
-public class CameraPreview1 extends AppCompatActivity implements SurfaceHolder.Callback {
+public class Camera2Preview extends AppCompatActivity implements SurfaceHolder.Callback {
 
     private SurfaceView mGlSurfaceView;
     int texturId = -1;
@@ -82,6 +83,10 @@ public class CameraPreview1 extends AppCompatActivity implements SurfaceHolder.C
     private FloatBuffer mTexBuffer;
     private int mProgram;
 
+    static {
+        System.loadLibrary("filterfw");
+    }
+
     @TargetApi(Build.VERSION_CODES.M)
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -89,6 +94,13 @@ public class CameraPreview1 extends AppCompatActivity implements SurfaceHolder.C
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_preview);
         requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
+
+
+        GLEnvironment glEnvironment = new GLEnvironment();
+        boolean active = glEnvironment.isActive();
+        Log.e("test","isactive:"+active);
+
+
         mGlSurfaceView = findViewById(R.id.camera_preview_gl);
         mGlSurfaceView.getHolder().addCallback(this);
      //   mGlSurfaceView.setEGLContextClientVersion(2);

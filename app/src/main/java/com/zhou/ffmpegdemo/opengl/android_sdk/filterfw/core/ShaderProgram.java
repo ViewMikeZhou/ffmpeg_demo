@@ -17,16 +17,13 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Frame;
-import android.filterfw.core.NativeAllocatorTag;
-import android.filterfw.core.Program;
-import android.filterfw.core.StopWatchMap;
-import android.filterfw.core.VertexFrame;
-import android.filterfw.geometry.Quad;
+
 import android.opengl.GLES20;
 
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.geometry.Quad;
+
 /**
- * @hide
+ *
  */
 public class ShaderProgram extends Program {
 

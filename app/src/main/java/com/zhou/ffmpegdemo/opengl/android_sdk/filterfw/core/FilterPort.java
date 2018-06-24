@@ -17,12 +17,10 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FrameFormat;
 import android.util.Log;
 
 /**
- * @hide
+ *
  */
 public abstract class FilterPort {
 

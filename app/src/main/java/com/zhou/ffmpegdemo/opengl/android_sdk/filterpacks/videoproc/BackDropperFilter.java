@@ -16,27 +16,27 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.videoproc;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.core.GenerateFinalPort;
-import android.filterfw.core.Frame;
-import android.filterfw.core.GLFrame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.MutableFrameFormat;
-import android.filterfw.core.ShaderProgram;
-import android.filterfw.format.ImageFormat;
+
 import android.opengl.GLES20;
 import android.os.SystemClock;
-import android.os.SystemProperties;
 import android.util.Log;
 
-import java.lang.Math;
-import java.util.Arrays;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GLFrame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFinalPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.MutableFrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.ShaderProgram;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.ImageFormat;
+
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 /**
- * @hide
+ *
  */
 public class BackDropperFilter extends Filter {
     /** User-visible parameters */
@@ -510,7 +510,7 @@ public class BackDropperFilter extends Filter {
 
         mLogVerbose = Log.isLoggable(TAG, Log.VERBOSE);
 
-        String adjStr = SystemProperties.get("ro.media.effect.bgdropper.adj");
+        String adjStr = ""; //SystemProperties.get("ro.media.effect.bgdropper.adj");
         if (adjStr.length() > 0) {
             try {
                 mAcceptStddev += Float.parseFloat(adjStr);

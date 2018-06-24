@@ -5,6 +5,7 @@ set(PATH_TO_MEDIACORE ${CMAKE_SOURCE_DIR}/src/main/cpp)
 set(PATH_TO_THIRDPARTY ${PATH_TO_MEDIACORE}/thirdparty)
 set(PATH_TO_JNI_LAYER ${CMAKE_SOURCE_DIR}/src/main/jni)
 
+include_directories( ${PATH_TO_MEDIACORE}/)
 include_directories(BEFORE ${PATH_TO_THIRDPARTY}/ffmpeg/include/)
 set(PATH_TO_PRE_BUILT ${PATH_TO_THIRDPARTY}/prebuilt/${ANDROID_ABI})
 

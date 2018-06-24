@@ -17,11 +17,6 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameManager;
-import android.filterfw.core.GLEnvironment;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;

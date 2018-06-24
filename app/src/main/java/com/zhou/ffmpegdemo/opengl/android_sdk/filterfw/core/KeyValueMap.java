@@ -19,7 +19,6 @@ package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
 import java.io.StringWriter;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @hide

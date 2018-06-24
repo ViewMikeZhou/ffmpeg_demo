@@ -7,13 +7,24 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+#include <libavformat/avformat.h>
 /*
  * Class:     com_zhou_ffmpegdemo_EncodUtil
  * Method:    init
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_zhou_ffmpegdemo_EncodUtil_init
-  (JNIEnv *, jobject);
+JNIEXPORT jstring JNICALL Java_com_zhou_ffmpegdemo_EncodUtil_init
+        (JNIEnv *, jobject);
+
+
+
+JNIEXPORT jstring JNICALL
+Java_com_zhou_ffmpegdemo_EncodUtil_avcodecInfo(JNIEnv *env, jobject instance);
+
+
+
+JNIEXPORT jstring JNICALL
+Java_com_zhou_ffmpegdemo_EncodUtil_configInfo(JNIEnv *env, jobject instance);
 
 #ifdef __cplusplus
 }

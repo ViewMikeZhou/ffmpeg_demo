@@ -17,11 +17,12 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format;
 
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.MutableFrameFormat;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.MutableFrameFormat;
 
 /**
- * @hide
+ *
  */
 public class PrimitiveFormat {
 

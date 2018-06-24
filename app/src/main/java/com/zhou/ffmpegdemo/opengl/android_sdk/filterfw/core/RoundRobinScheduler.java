@@ -19,11 +19,8 @@ package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
 import java.util.Set;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.Scheduler;
-
 /**
- * @hide
+ *
  */
 public class RoundRobinScheduler extends Scheduler {
 

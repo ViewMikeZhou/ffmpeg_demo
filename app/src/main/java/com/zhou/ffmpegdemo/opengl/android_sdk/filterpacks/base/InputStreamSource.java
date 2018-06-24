@@ -17,22 +17,23 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.base;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.core.GenerateFinalPort;
-import android.filterfw.core.MutableFrameFormat;
-import android.filterfw.format.PrimitiveFormat;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFinalPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.MutableFrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.PrimitiveFormat;
 
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 
 /**
- * @hide
+ *
  */
 public class InputStreamSource extends Filter {
 

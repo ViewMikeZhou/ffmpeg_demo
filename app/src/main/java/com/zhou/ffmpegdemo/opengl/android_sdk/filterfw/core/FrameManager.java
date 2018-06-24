@@ -17,12 +17,8 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.MutableFrameFormat;
-
 /**
- * @hide
+ *
  */
 public abstract class FrameManager {
 

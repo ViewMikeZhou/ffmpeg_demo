@@ -17,24 +17,24 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterpacks.ui;
 
-import android.filterfw.core.Filter;
-import android.filterfw.core.FilterContext;
-import android.filterfw.core.Frame;
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.GenerateFieldPort;
-import android.filterfw.core.GenerateFinalPort;
-import android.filterfw.core.GLEnvironment;
-import android.filterfw.core.GLFrame;
-import android.filterfw.core.MutableFrameFormat;
-import android.filterfw.core.ShaderProgram;
-import android.filterfw.format.ImageFormat;
-
-import android.view.Surface;
 
 import android.util.Log;
+import android.view.Surface;
+
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Filter;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FilterContext;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.Frame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.FrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GLEnvironment;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GLFrame;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFieldPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.GenerateFinalPort;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.MutableFrameFormat;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core.ShaderProgram;
+import com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.format.ImageFormat;
 
 /**
- * @hide
+ *
  */
 public class SurfaceTargetFilter extends Filter {
 

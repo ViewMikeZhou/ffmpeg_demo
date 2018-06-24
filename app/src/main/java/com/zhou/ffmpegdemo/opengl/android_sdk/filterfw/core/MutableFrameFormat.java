@@ -17,9 +17,6 @@
 
 package com.zhou.ffmpegdemo.opengl.android_sdk.filterfw.core;
 
-import android.filterfw.core.FrameFormat;
-import android.filterfw.core.KeyValueMap;
-
 import java.util.Arrays;
 
 /**
