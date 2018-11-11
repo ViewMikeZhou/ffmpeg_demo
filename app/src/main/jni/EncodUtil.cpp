@@ -12,7 +12,7 @@ struct URLProtocol;
 JNIEXPORT jstring JNICALL Java_com_zhou_ffmpegdemo_EncodUtil_init
         (JNIEnv *env, jobject) {
     char info[40000] = {0};
-    av_register_all();
+    /*av_register_all();
     struct URLProtocol *pup = NULL;
     //Input
     struct URLProtocol **p_temp = &pup;
@@ -26,7 +26,41 @@ JNIEXPORT jstring JNICALL Java_com_zhou_ffmpegdemo_EncodUtil_init
     while ((*p_temp) != NULL) {
         sprintf(info, "%s[Out][%10s]\n", info, avio_enum_protocols((void **) p_temp, 1));
     }
-    LOGE("%s", info);
+    LOGE("%s", info);*/
+    av_register_all();
+    avcodec_register_all();
+
+
+
+    AVCodec *pCodec = avcodec_find_decoder(CODEC_ID_H264);
+    if (!pCodec) {
+        LOGE("codec not find ");
+    }
+
+    AVCodecContext *codecCtx = avcodec_alloc_context3(pCodec);
+    if (!codecCtx) {
+        LOGE("codec context fail");
+    }
+
+    int ret = avcodec_open2(codecCtx, pCodec, NULL);
+    if (ret == -1) {
+        LOGE("codec open fail");
+    }
+
+    AVFrame *pvideoFrame = av_frame_alloc();
+
+    /**
+     *  开始解码
+     */
+    AVPacket avPacket;
+    int gotPicPtr = 0;
+    int result = 0;
+    av_init_packet(&avPacket);
+    //avPacket.data =
+    //avPacket.size =
+    //解码操作
+    avcodec_decode_video2(codecCtx, pvideoFrame, &gotPicPtr, &avPacket);
+
     return env->NewStringUTF(info);
 }
 

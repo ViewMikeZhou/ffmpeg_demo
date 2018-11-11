@@ -30,6 +30,8 @@ public class FFmpegTest1Activity extends AppCompatActivity {
         String avcodecInfo = encodUtil.avcodecInfo();
         String configInfo = encodUtil.configInfo();
         tv.setText(configInfo);
+
+
     }
 
     public native void callJni();

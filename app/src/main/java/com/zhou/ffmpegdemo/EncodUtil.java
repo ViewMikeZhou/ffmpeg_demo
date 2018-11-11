@@ -1,6 +1,6 @@
 package com.zhou.ffmpegdemo;
 
-/**
+/**对应h264 decode
  * Created by zhou on 2018/4/26.
  */
 
