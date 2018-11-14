@@ -31,7 +31,6 @@ JNIEXPORT jstring JNICALL Java_com_zhou_ffmpegdemo_EncodUtil_init
     avcodec_register_all();
 
 
-
     AVCodec *pCodec = avcodec_find_decoder(CODEC_ID_H264);
     if (!pCodec) {
         LOGE("codec not find ");
@@ -109,4 +108,13 @@ Java_com_zhou_ffmpegdemo_EncodUtil_configInfo(JNIEnv *env, jobject instance) {
 
     //LOGE("%s", info);
     return env->NewStringUTF(info);
+}
+
+
+JNIEXPORT void JNICALL
+Java_com_zhou_ffmpegdemo_EncodUtil_decodeMp4(JNIEnv *env, jobject instance, jstring filePath_) {
+    const char *filePath = env->GetStringUTFChars(filePath_, 0);
+    LOGE("%s", filePath);
+
+    env->ReleaseStringUTFChars(filePath_, filePath);
 }

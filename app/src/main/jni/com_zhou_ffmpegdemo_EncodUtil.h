@@ -26,6 +26,9 @@ Java_com_zhou_ffmpegdemo_EncodUtil_avcodecInfo(JNIEnv *env, jobject instance);
 JNIEXPORT jstring JNICALL
 Java_com_zhou_ffmpegdemo_EncodUtil_configInfo(JNIEnv *env, jobject instance);
 
+JNIEXPORT void JNICALL
+Java_com_zhou_ffmpegdemo_EncodUtil_decodeMp4(JNIEnv *env, jobject instance, jstring filePath_);
+
 #ifdef __cplusplus
 }
 #endif

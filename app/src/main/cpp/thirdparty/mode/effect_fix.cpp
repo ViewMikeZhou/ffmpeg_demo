@@ -1,5 +1,5 @@
 #include "inc/fmod.hpp"
-
+#include "jni.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include "org_fmod_example_EffectUtils.h"

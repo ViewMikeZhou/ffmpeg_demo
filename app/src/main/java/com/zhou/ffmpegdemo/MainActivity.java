@@ -8,7 +8,6 @@ import android.widget.SeekBar;
 
 import com.zhou.ffmpegdemo.view.ProgramView;
 
-import org.fmod.FMOD;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        FMOD.init(this);
+
     }
 
 

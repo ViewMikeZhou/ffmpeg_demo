@@ -18,29 +18,29 @@ file(GLOB FILES_JNI_LAYER "${PATH_TO_JNI_LAYER}/*.cpp")
 
 file(GLOB FILES_JNI_LAYER "${PATH_TO_JNI_LAYER}/*.cpp")
 
-file(GLOB Files_FMOD1 "${PATH_TO_THIRDPARTY}/mode/*.cpp")
-file(GLOB Files_FMOD2 "${PATH_TO_THIRDPARTY}/mode/inc/*.hpp")
+#file(GLOB Files_FMOD1 "${PATH_TO_THIRDPARTY}/mode/*.cpp")
+#file(GLOB Files_FMOD2 "${PATH_TO_THIRDPARTY}/mode/inc/*.hpp")
 
 #添加fmode =======;
-add_library(libfmode SHARED IMPORTED)
-set_target_properties(libfmode
-                    PROPERTIES IMPORTED_LOCATION
-                    ${PATH_TO_THIRDPARTY}/mode/libfmod.so
-)
+#add_library(libfmod STATIC IMPORTED)
+#set_target_properties(libfmod
+#                    PROPERTIES IMPORTED_LOCATION
+#                    ${PATH_TO_PRE_BUILT}/libfmod.so
+#)
 
-add_library(libfmodeL SHARED IMPORTED)
- set_target_properties(libfmodeL
-                    PROPERTIES IMPORTED_LOCATION
-                    ${PATH_TO_THIRDPARTY}/mode/libfmodL.so
-)
+#add_library(libfmodL STATIC IMPORTED)
+#set_target_properties(libfmodL
+#                    PROPERTIES IMPORTED_LOCATION
+#                    ${PATH_TO_PRE_BUILT}/libfmodL.so
+#)
 
 
 add_library( native-lib
             SHARED
             ${FILES_TEST}
             ${FILES_JNI_LAYER}
-            ${Files_FMOD1}
-            ${Files_FMOD2}
+           # ${Files_FMOD1}
+           # ${Files_FMOD2}
             )
 
 
@@ -72,6 +72,6 @@ target_link_libraries(native-lib
                       ${PATH_TO_PRE_BUILT}/libsox.a
                        ${log-lib}
                        #fmode
-                       libfmode
-                       libfmodeL
+                     #  libfmod
+                     #  libfmodL
                        )
